@@ -5,7 +5,7 @@ const mongoose= require("mongoose")
 const userRouter=require("./Routes/userRoutes")
 const userModel= require("./Models/userModel")
 const app=express()
-const port= process.env.PORT||5000;
+const port= process.env.PORT;
 const uri=process.env.MONGO
 app.use(express.json())
 app.use(cors())
