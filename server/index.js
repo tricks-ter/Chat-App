@@ -45,5 +45,5 @@ app.get("/",(req,res)=>{
 
 app.listen(port,(req,res)=>{
     console.log(`Server connected on ${port}`)
-    console.log(req.hostname)
+    
 })
