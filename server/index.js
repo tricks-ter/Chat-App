@@ -11,13 +11,11 @@ app.use(express.json())
 app.use(cors())
 app.use("/api/users",userRouter)
 
-let mc=false
 
-while(mc==false){
-mongoose.connect(uri).then(()=>  console.log("Mongo db connection established")
-    mc=true
-).catch((error)=> console.log("Connection filed",error.message))
-}
+
+
+mongoose.connect(uri).then(()=>  console.log("Mongo db connection established")).catch((error)=> console.log("Connection filed",error.message))
+
 
 
 
