@@ -27,7 +27,7 @@ export const AuthContextProvider =({children})=>{
 
   useEffect(()=>{
       setuser(JSON.parse(localStorage.getItem("User")))
-  })
+  },[])
 
 
 

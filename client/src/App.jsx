@@ -7,6 +7,7 @@ import {Container} from "react-bootstrap";
 import NavBar from "./Components/NavBar.jsx";
 import {useContext} from "react";
 import {AuthContext} from "./Context/AuthContext.jsx";
+import {ChatContextProvider} from "./Context/ChatContext.jsx";
 
 function App(){
 
@@ -14,7 +15,7 @@ function App(){
 
 
     return (
-        <>
+        <ChatContextProvider user={user}>
         <NavBar/>
         <Container className="text-secondary">
             <Routes>
@@ -24,7 +25,7 @@ function App(){
                 <Route path="*" element={<Navigate to="/"/>} />
             </Routes>
         </Container>
-        </>
+        </ChatContextProvider>
 
 
     )
