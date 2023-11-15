@@ -1,4 +1,4 @@
-export const baseUrl ="https://www.skycoder.me/api"
+export const baseUrl ="https://sore-pink-shrimp-hose.cyclic.app/api"
 
 export const postRequest = async(url,body)=>{
 
