@@ -65,7 +65,8 @@ export const ChatContextProvider=({children,user})=>{
 
     },[user])
 
-    async function createChats(firstId,secondId){
+
+    const createChats = useCallback(async (firstId,secondId)=>{
 
         const response = await getRequest(`${baseUrl}/chats/`,JSON.stringify({firstId,secondId}))
 
@@ -73,11 +74,7 @@ export const ChatContextProvider=({children,user})=>{
 
 
         setUserChats((prev)=>[...prev,response])
-
-
-
-
-    }
+    },[])
 
 
 

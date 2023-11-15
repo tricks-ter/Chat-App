@@ -2,7 +2,6 @@ import {useContext} from "react";
 import {ChatContext} from "../../Context/ChatContext.jsx";
 import userChat from "./UserChat.jsx";
 import {AuthContext} from "../../Context/AuthContext.jsx";
-import login from "../../Pages/Login.jsx";
 
 const PotentialChats =()=>{
 
