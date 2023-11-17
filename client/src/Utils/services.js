@@ -1,4 +1,4 @@
-export const baseUrl ="https://sore-pink-shrimp-hose.cyclic.app/"
+export const baseUrl ="https://sore-pink-shrimp-hose.cyclic.app"
 
 export const postRequest = async(url,body)=>{
 
