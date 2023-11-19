@@ -19,6 +19,7 @@ app.use("/api/users",userRouter)
 app.use("/api/chats",chatRoute)
 app.use("/api/messages",messageRoute)
 mongoose.connect(uri).then(()=> console.log("Mongo db connection established")).catch((error)=> console.log("Connection filed",error.message))
+console.log(uri)
 
 
 app.get("/",(req,res)=>{
