@@ -25,7 +25,7 @@ export const ChatContextProvider=({children,user})=>{
 
 
     useEffect(()=>{
-        const newSocket=io("http://localhost:7488")
+        const newSocket=io("http://chat-app-production-ee2c.up.railway.app")
         setSocket(newSocket)
 
         return ()=>{
